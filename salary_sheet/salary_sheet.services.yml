@@ -1,0 +1,8 @@
+services:
+  salary_sheet.csv_service:
+    class: Drupal\salary_sheet\Services\SalarySheetCSVService
+  salary_sheet.command:
+    class: Drupal\salary_sheet\Commands\SalarySheetCommand
+    arguments: ['@salary_sheet.csv_service']
+    tags:
+      - { name: drush.command }

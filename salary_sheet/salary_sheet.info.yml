@@ -1,0 +1,5 @@
+name: Salary Sheet
+type: module
+description: Provides a command to generate salary dates for 12 months
+package: Custom
+core_version_requirement: ^9 || ^10
